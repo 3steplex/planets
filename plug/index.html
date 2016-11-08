@@ -48,11 +48,62 @@ table {
   box-sizing: border-box;
   box-sizing: border-box; }
 
+/*----Rotate/Space MOD------*/
+
 body {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #08090A; }
+  background-color: #08090A; 
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.layer, .some-space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
+#logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.some-space {
+  -webkit-animation: rotate 18s 0.5s infinite linear reverse;
+          animation: rotate 18s 0.5s infinite linear reverse;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+/*----END--Rotate/Space MOD------*/
 
 #universe {
   z-index: 1;
@@ -1551,7 +1602,12 @@ body {
         <span>Distance</span>
       </label>
     </div>
-    <div id="universe" class="scale-stretched">
+      
+ <div class="layer">  
+  <div class="some-space">
+    <svg version="1.1" id="logo-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="350" height="350" viewBox="175 10 175 175" enable-background="new 175 0 175 175" xml:space="preserve">
+    
+     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="earth">
           <div id="mercury" class="orbit">
@@ -1649,6 +1705,11 @@ body {
         </div>
       </div>
     </div>
+      
+  </svg>
+ </div>
+</div>
+      
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script type="text/javascript">
     if (typeof jQuery == 'undefined') { 
