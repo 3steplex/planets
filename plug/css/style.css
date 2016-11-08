@@ -23,8 +23,8 @@ body {
   position: absolute;
   border-radius: 100%;
   margin: -100px auto;
-  -webkit-animation: orbit 8.81216s linear infinite;
-          animation: orbit 8.81216s linear infinite;
+  -webkit-animation: orbit 18.81216s linear infinite;
+          animation: orbit 18.81216s linear infinite;
 }
 
 .planet {
