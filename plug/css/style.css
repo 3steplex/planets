@@ -23,8 +23,8 @@ body {
   position: absolute;
   border-radius: 100%;
   margin: -100px auto;
-  -webkit-animation: orbit 18.81216s linear infinite;
-          animation: orbit 18.81216s linear infinite;
+  -webkit-animation: orbit 80.81216s linear infinite;
+          animation: orbit 80.81216s linear infinite;
 }
 
 .planet {
@@ -44,24 +44,8 @@ body {
   border-radius: 100%;
   margin: 20px;
 }
-.moon:before {
-  content: '';
-  background: #949494;
-  border-radius: 100%;
-  width: 9px;
-  height: 9px;
-  display: inline-block;
-  margin: 10px 10px;
-}
-.moon:after {
-  content: '';
-  background: #949494;
-  border-radius: 100%;
-  width: 9px;
-  height: 9px;
-  display: block;
-  margin: -7px 20px;
-}
+
+
 
 @-webkit-keyframes orbit {
   to {
