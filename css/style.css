@@ -23,7 +23,7 @@ body {
 }
 
 #parallax {
-  background: radial-gradient(ellipse at center, #fff8db, #151517);
+  background: radial-gradient(ellipse at center, #fffef7, #000000);
 }
 
 #particles-js, #parallax, .layer, .some-space {
