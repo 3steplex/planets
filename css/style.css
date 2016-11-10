@@ -23,7 +23,7 @@ body {
 }
 
 #parallax {
-  background: radial-gradient(ellipse at center, rgb(255, 254, 237, 0.23), rgba(0,0,0,0.6));
+  background: radial-gradient(ellipse at center, rgb(255, 254, 237, 0.28), rgba(0,0,0,0.3));
 }
 
 #particles-js, #parallax, .layer, .some-space {
@@ -70,7 +70,7 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 60px -20px rgba(0, 74, 114, 0.23), -14px -15px 40px -10px #eaf7ff;
+  box-shadow: 0 0 90px -20px rgba(0, 74, 114, 0.23), -14px -15px 40px -10px #eaf7ff;
   left: 50%;
   top: 50%;
   margin: -150px;
