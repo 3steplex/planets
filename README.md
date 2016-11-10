@@ -5,20 +5,22 @@
 
 É utilizado o método "parallax" e "particles" para recriar uma visão 3D e simulação do espaço.
 
-. Parallax(Matthew Wagerfield)
+- Parallax(Matthew Wagerfield)
   .http://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js
   
-. Particulas(Vincent Garreau)
+- Particulas(Vincent Garreau)
   .https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js
 
 
 Este projeto é baseado em dois projetos de:
 
-Nick Merritt
-. Mouse Parallax Test (http://codepen.io/nickmerritt/pen/pEgavR)
+- Nick Merritt
+ .Mouse Parallax Test (http://codepen.io/nickmerritt/pen/pEgavR)
 
-Jack Thomson
+- Jack Thomson
  .The Red Planet (http://codepen.io/Jackthomsonn/pen/vOvNgL)
  
-Artyom
+- Artyom
  .Planet Animation (Only css) (http://codepen.io/Art292/pen/QjOYbO)
+
+
